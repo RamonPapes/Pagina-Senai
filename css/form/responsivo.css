@@ -1,0 +1,43 @@
+.imagem-principal{
+    display: none;
+}
+
+
+@media only screen and (min-width:1040px){
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        margin: 140px;
+    }
+    
+    .imagem-principal{
+        display: block;
+    }
+
+    #imagem-cimatec{
+        border-radius: 20px 0px 0px 20px;
+        box-shadow: 0px 0px 10px var(--primary-color);
+        height: 100%;
+        width: 100%;
+    }
+
+    .form-container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 0px 0px 10px var(--primary-color);        
+    }
+    .navbar {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 20px;
+    }
+    .input{
+        margin-right: 50px;
+        gap: 20px;
+    }
+}

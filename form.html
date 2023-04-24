@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Cadastro Senai</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/form/styles.css">
+    <link rel="stylesheet" href="css/form/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,6 +20,9 @@
         <img class="logo" src="img/logo_senai.png" alt="Logo do Senai">
     </nav>
     <main class="container">
+        <div class="imagem-principal">
+            <img id="imagem-cimatec" src="img/cimatec.png" alt="cimatec">
+        </div>
         <div class="form-container">
             <div class="title-container">
                 <h1 class="form-title">Faça Seu Cadastro</h1>
@@ -29,11 +32,11 @@
                 <div class="input">
                     <div class="input-campo">
                         <label for="">Usuario</label>
-                        <input type="text">
+                        <input type="text" placeholder="Ex:  usuario23">
                     </div>
                     <div class="input-campo">
                         <label for="">Email</label>
-                        <input type="text">
+                        <input type="text" placeholder="Ex:  usuario23@gmail.com">
                     </div>
                 </div>
                 <div class="input">
@@ -47,13 +50,14 @@
                     </div>
                 </div>
                 <div class="submit-container">
-                    <button class="submit">
-                        <p>Confirmar</p>
+                    <button class="submit" onclick="confirmar()">
+                        <a href="index.html">Confirmar</a>
                     </button>
                 </div>
             </form>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

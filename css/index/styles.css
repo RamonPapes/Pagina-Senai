@@ -1,0 +1,193 @@
+:root {
+    --main-bg-color: #E9EFF8;
+    --primary-color: #0D95D1;
+    --footer-color: #283548;
+    --cinza: #898989;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+
+.open {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+}
+
+.logo-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+aside {
+    width: 100px;
+    background-color: #787D84;
+    opacity: 0.9;
+    height: 320px;
+    position: fixed;
+    border-radius: 0 10px 10px 0;
+}
+
+aside a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hidden-svg {
+    visibility: hidden;
+}
+
+.container-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.sidebar-list button {
+    align-self: flex-start;
+    margin-left: 5px;
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-justify: center;
+}
+
+.main-container h1 {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.main-container h1:nth-child(1) {
+    margin-top: 30px;
+}
+
+.main-container p {
+    font-size: 14px;
+}
+
+.main-container h2 {
+    font-size: 12px;
+}
+
+.cursos{
+    justify-self: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.curso{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso a{
+    text-justify: center;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.cursos-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: var(--footer-color) ;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+footer img{
+    margin-top: 5px;
+    width: 80px;
+    height: 20px;
+}
+
+footer p{
+    color: white;
+    font-size: 10px;
+    align-self: center;
+}
+
+footer svg{
+    width: 16px;
+    height: 16px;
+    fill: #FFFF;
+}
+
+.redes-container{
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.curso:hover{
+    opacity: 0.7;
+}
+
+footer svg:hover{
+    fill: var(--primary-color);
+}

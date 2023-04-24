@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #C7E0FE;
+    --main-bg-color: #E9EFF8;
     --primary-color: #0D95D1;
     --cinza: #898989;
 }
@@ -27,14 +27,12 @@ body {
 
 .container {
     margin-top: 30px;
-    height: 65vh;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    height: 65vh;
 }
 
 .form-container {
-    width: 90%;
     height: 100%;
     background-color: white;
     display: grid;
@@ -83,9 +81,10 @@ form {
     background-color: var(--primary-color);
     border-radius: 30px;
     margin-bottom: 40px;
+    border: none;
 }
 
-.submit p {
+.submit a {
     color: white;
     font-weight: 500;
     font-size: 18px;
@@ -110,9 +109,21 @@ input {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: white;
+    background: none;
 }
 
 input:focus{
     outline: none;
-  }
+}
+
+.submit:hover{
+    opacity: 0.7;
+}
+label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+}
